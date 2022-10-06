@@ -9,3 +9,15 @@ summation(2) -> 3
 summation(8) -> 36
 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
 */
+
+const summation = (num) => {
+    let count = 0;
+    for (let i = 0; i <= num; i++) {
+        count += i;
+    }
+    return count;
+};
+
+//Test Ex2.5
+summation(2);
+summation(8);
