@@ -9,5 +9,5 @@ const isStr = (bool) => {
 };
 
 //Test Ex1.1
-isStr(true); // "Yes"
-isStr(false); // "No"
+isStr(true); //Output: "Yes"
+isStr(false); //Output: "No"

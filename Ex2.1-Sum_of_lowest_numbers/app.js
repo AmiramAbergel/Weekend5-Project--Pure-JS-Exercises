@@ -7,7 +7,13 @@ For example, when an array is passed like [19, 5, 42, 2, 77], the output should 
 [10, 343445353, 3453445, 3453545353453] should return 3453455.
 */
 
-const twoLowestPos = (arr) => {};
+const twoLowestPos = (arr) => {
+    const sorted = arr.sort((a, b) => {
+        return a - b;
+    });
+    return sorted[0] + sorted[1];
+};
 
-// Test Ex2.1
-twoLowestPos([19, -5.3, 42, 2, 77]);
+// Test: Ex2.1
+twoLowestPos([19, 5, 42, 2, 77]); // Output: 7
+twoLowestPos([10, 343445353, 3453445, 3453545353453]); // Output: 3453455

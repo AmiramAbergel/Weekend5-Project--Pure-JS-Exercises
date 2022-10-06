@@ -18,6 +18,6 @@ const summation = (num) => {
     return count;
 };
 
-//Test Ex2.5
-summation(2);
-summation(8);
+//Test: Ex2.5
+summation(2); // Output: 3
+summation(8); // Output: 36

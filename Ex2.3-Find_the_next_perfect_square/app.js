@@ -26,6 +26,6 @@ const findNextSquare = (num) => {
 };
 
 // Test Ex2.3
-findNextSquare(121);
-findNextSquare(625);
-findNextSquare(114);
+findNextSquare(121); // Output: 144
+findNextSquare(625); // Output: 676
+findNextSquare(114); // Output: -1

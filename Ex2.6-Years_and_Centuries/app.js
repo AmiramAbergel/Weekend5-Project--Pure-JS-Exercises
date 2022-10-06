@@ -16,7 +16,7 @@ const centuryFromYear = (year) => {
 };
 
 // Test: Ex2.6
-centuryFromYear(1705);
-centuryFromYear(1900);
-centuryFromYear(1601);
-centuryFromYear(2000);
+centuryFromYear(1705); // Output: 18
+centuryFromYear(1900); // Output: 19
+centuryFromYear(1601); // Output: 17
+centuryFromYear(2000); // Output: 20
