@@ -10,4 +10,6 @@ It’s guaranteed that array contains at least 3 numbers.
 
 const findUniq = (arr) => {};
 
-//Test Ex2.4
+//Test: Ex2.4
+findUniq([1, 1, 1, 2, 1, 1]); // Output:
+findUniq([0, 0, 0.55, 0, 0]); // Output:
