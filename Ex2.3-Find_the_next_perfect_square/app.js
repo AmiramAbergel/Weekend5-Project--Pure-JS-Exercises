@@ -13,3 +13,19 @@ findNextSquare(121) --> returns 144
 findNextSquare(625) --> returns 676
 findNextSquare(114) --> returns -1 since 114 is not a perfect
 */
+
+const findNextSquare = (num) => {
+    let sqrt = Math.sqrt(num);
+    let next = sqrt + 1;
+    let res = Math.pow(next, 2);
+    if (Number.isInteger(sqrt) === false) {
+        return -1;
+    } else {
+        return res;
+    }
+};
+
+// Test Ex2.3
+findNextSquare(121);
+findNextSquare(625);
+findNextSquare(114);
