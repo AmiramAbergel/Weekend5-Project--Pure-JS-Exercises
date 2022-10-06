@@ -10,3 +10,13 @@ centuryFromYear( 1900) returns (19)
 centuryFromYear(1601) returns (17)
 centuryFromYear(2000) returns (20)
 */
+
+const centuryFromYear = (year) => {
+    return Math.ceil(year / 100);
+};
+
+// Test: Ex2.6
+centuryFromYear(1705);
+centuryFromYear(1900);
+centuryFromYear(1601);
+centuryFromYear(2000);
