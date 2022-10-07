@@ -4,3 +4,9 @@ Write a function called repeat_str which repeats the given string src exactly co
 repeatStr(6, "I") // "IIIIII"
 repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
 */
+
+const repeatStr = (counter, str) => {};
+
+//Test: Ex5.2
+repeatStr(6, "I"); // Output:
+repeatStr(5, "Hello"); // Output:

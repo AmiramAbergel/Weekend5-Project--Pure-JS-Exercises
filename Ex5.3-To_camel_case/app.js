@@ -7,3 +7,9 @@ Examples:
 toCamelCase("the-stealth-warrior") // returns "theStealthWarrior"
 toCamelCase("The_Stealth_Warrior") // returns "TheStealthWarrior"
 */
+
+const toCamelCase = () => {};
+
+//Test: Ex5.3
+toCamelCase("the-stealth-warrior"); // Output:
+toCamelCase("The_Stealth_Warrior"); // Output:

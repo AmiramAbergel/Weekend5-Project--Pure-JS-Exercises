@@ -12,3 +12,9 @@ Examples:
 toWeirdCase( "String" );//=> returns "StRiNg"
 toWeirdCase( "Weird string case" );//=> returns "WeIrD StRiNg CaSe"
 */
+
+const toWeirdCase = () => {};
+
+//Test: Ex5.4
+toWeirdCase("String"); // Output:
+toWeirdCase("Weird string case"); // Output:
