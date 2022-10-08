@@ -14,7 +14,15 @@ Please keep in mind that the test cases ensure that the number of people in the 
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 */
 
-const busStops = (arr) => {};
+const busStops = (arr) => {
+    const statusPerStation = [arr.length];
+    let currentCapacity = arr[0][0];
+    for (let i = 1; i < arr.length; i++) {
+        statusPerStation.push(arr[i][0] - arr[i][1]);
+        currentCapacity += statusPerStation[i];
+    }
+    return currentCapacity;
+};
 
 // Test: Ex3.2
 
@@ -23,7 +31,7 @@ busStops([
     [3, 5],
     [5, 8],
 ]);
-// Output:
+// Output: 5
 
 busStops([
     [3, 0],
@@ -33,7 +41,7 @@ busStops([
     [6, 1],
     [7, 10],
 ]);
-// Output:
+// Output: 17
 
 busStops([
     [3, 0],
@@ -43,6 +51,6 @@ busStops([
     [6, 1],
     [7, 8],
 ]);
-// Output:
+// Output: 21
 
-busStops([[0, 0]]); // Output:
+busStops([[0, 0]]); // Output: 0
