@@ -14,13 +14,29 @@ Example:
 "ABBA" -> 2 # 'A' and 'B' each occur twice
 */
 
-const countDuplicates = (str) => {};
+// const countDuplicates = (str) => {
+//     let arr = str.toLowerCase().split("");
+//     let res = [...new Set(arr)];
+//     console.log(res);
+// };
+
+const countDuplicates2 = (str) => {
+    let arr = str.toLowerCase().split("");
+    let dupArr = arr.filter((element, index, self) => {
+        return self.indexOf(element) !== index;
+    });
+    let res = dupArr.filter((element, index, self) => {
+        return self.indexOf(element) === index;
+    });
+
+    return res.length;
+};
 
 // Test Ex6.2
-countDuplicates("abcde"); // Output:
-countDuplicates("aabbcde"); // Output:
-countDuplicates("aabBcde"); // Output:
-countDuplicates("indivisibility"); // Output:
-countDuplicates("Indivisibilities"); // Output:
-countDuplicates("aA11"); // Output:
-countDuplicates("ABBA"); // Output:
+countDuplicates2("abcde"); // Output: 0
+countDuplicates2("aabbcde"); // Output: 2
+countDuplicates2("aabBcde"); // Output: 2
+countDuplicates2("indivisibility"); // Output: 1
+countDuplicates2("Indivisibilities"); // Output: 2
+countDuplicates2("aA11"); // Output: 2
+countDuplicates2("ABBA"); // Output: 2
