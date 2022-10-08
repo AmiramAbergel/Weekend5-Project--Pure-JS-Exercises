@@ -8,3 +8,10 @@ isIsogram("Dermatoglyphics") == true
 isIsogram("aba") == false
 isIsogram("moOse") == false // -- ignore letter case
 */
+
+const isIsogram = () => {};
+
+// Test: Ex6.4
+isIsogram("Dermatoglyphics"); // Output:
+isIsogram("aba"); // Output:
+isIsogram("moOse"); // Output:

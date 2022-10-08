@@ -15,3 +15,11 @@ maskify("Skippy") == "##ippy"
 maskify("Nananananananananananananananana Batman!") ==
 "####################################man!"
 */
+
+const maskify = (cardNumber) => {};
+
+// Test Ex5.6
+maskify("4556364607935616"); // Output:
+maskify("64607935616"); // Output:
+maskify("1"); // Output:
+maskify(""); // Output:

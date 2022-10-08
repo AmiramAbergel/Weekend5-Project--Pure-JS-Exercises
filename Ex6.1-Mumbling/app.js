@@ -7,3 +7,10 @@ accum("RqaEzty") -> "R-Qq-Aaa-Eeeezzzz-Tttttt-Yyyyyyy"
 accum("cwAt") -> "C-Ww-Aaa-Tttt"
 The parameter of accum is a string which includes only letters from a..z and A..Z .
 */
+
+const accum = () => {};
+
+// Test Ex6.1
+accum("abcd"); // Output:
+accum("RqaEzty"); // Output:
+accum("cwAt"); // Output:

@@ -10,3 +10,9 @@ longest(a, b) -> "abcdefklmopqwxy"
 a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 */
+
+const longest = (s1, s2) => {};
+
+//Test: Ex6.3
+longest(a, b); // Output:
+longest(a, a); // Output:
