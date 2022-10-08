@@ -19,3 +19,15 @@ Signature will always contain 3 numbers; n will always be a non-negative number;
 return an empty array (except in C return NULL) and be ready for anything else which is not
 clearly specified ;)
 */
+
+/**
+ * @param {number} n
+ * @return {number}
+ */
+const tribonacci = function (n) {};
+
+// Test: Ex4.2
+tribonacci(2); // Output:
+tribonacci(3); // Output:
+tribonacci(4); // Output:
+tribonacci(5); // Output:

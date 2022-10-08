@@ -14,3 +14,15 @@ this:
 or this:
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …
 */
+
+/**
+ * @param {number} n
+ * @return {number}
+ */
+const fib = function (n) {};
+
+// Test: Ex4.1
+fib(2); // Output:
+fib(3); // Output:
+fib(4); // Output:
+fib(5); // Output:
