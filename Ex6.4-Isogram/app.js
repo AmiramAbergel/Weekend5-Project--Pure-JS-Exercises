@@ -9,9 +9,20 @@ isIsogram("aba") == false
 isIsogram("moOse") == false // -- ignore letter case
 */
 
-const isIsogram = () => {};
+const isIsogram = (str) => {
+    let arr = str.toLowerCase().split("").sort();
+    let dupArr = arr.filter((element, index) => {
+        return arr.indexOf(element) !== index;
+    });
+    if (dupArr.length > 0) {
+        return false;
+    } else {
+        return true;
+    }
+};
 
 // Test: Ex6.4
-isIsogram("Dermatoglyphics"); // Output:
-isIsogram("aba"); // Output:
-isIsogram("moOse"); // Output:
+isIsogram("Dermatoglyphics"); // Output: true
+isIsogram("aba"); // Output: false
+isIsogram("moOse"); // Output: false
+isIsogram(""); // Output: true

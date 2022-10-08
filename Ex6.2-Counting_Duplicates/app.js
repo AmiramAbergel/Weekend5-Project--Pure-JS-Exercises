@@ -14,4 +14,13 @@ Example:
 "ABBA" -> 2 # 'A' and 'B' each occur twice
 */
 
+const countDuplicates = (str) => {};
+
 // Test Ex6.2
+countDuplicates("abcde"); // Output:
+countDuplicates("aabbcde"); // Output:
+countDuplicates("aabBcde"); // Output:
+countDuplicates("indivisibility"); // Output:
+countDuplicates("Indivisibilities"); // Output:
+countDuplicates("aA11"); // Output:
+countDuplicates("ABBA"); // Output:
