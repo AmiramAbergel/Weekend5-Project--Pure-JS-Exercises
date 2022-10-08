@@ -8,8 +8,14 @@ toCamelCase("the-stealth-warrior") // returns "theStealthWarrior"
 toCamelCase("The_Stealth_Warrior") // returns "TheStealthWarrior"
 */
 
-const toCamelCase = () => {};
+const toCamelCase = (str) => {
+    const regexp = /-./gi;
+    let res = str.replace(regexp, (letter, index) => {
+        letter.charAt(index).toUpperCase();
+    });
+    return res;
+};
 
 //Test: Ex5.3
 toCamelCase("the-stealth-warrior"); // Output:
-toCamelCase("The_Stealth_Warrior"); // Output:
+//toCamelCase("The_Stealth_Warrior"); // Output:

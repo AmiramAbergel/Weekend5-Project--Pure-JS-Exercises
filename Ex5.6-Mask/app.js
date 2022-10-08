@@ -16,10 +16,21 @@ maskify("Nananananananananananananananana Batman!") ==
 "####################################man!"
 */
 
-const maskify = (cardNumber) => {};
+const maskify = (cardNumber) => {
+    if (cardNumber.length <= 4) {
+        return cardNumber.slice(-4);
+    } else {
+        let last4 = cardNumber.slice(-4);
+        let maskNum = cardNumber.slice(1, cardNumber.length - 4);
+        let res = "#".repeat(maskNum.length + 1) + last4;
+        return res;
+    }
+};
 
 // Test Ex5.6
-maskify("4556364607935616"); // Output:
-maskify("64607935616"); // Output:
-maskify("1"); // Output:
-maskify(""); // Output:
+maskify("4556364607935616"); // Output: '############5616'
+maskify("64607935616"); // Output: '#######5616'
+maskify("1"); // Output: '1'
+maskify(""); // Output: ''
+maskify("Skippy"); // Output: '##ippy'
+maskify("Nananananananananananananananana Batman!"); // Output: '####################################man!'
