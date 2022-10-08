@@ -5,8 +5,22 @@ repeatStr(6, "I") // "IIIIII"
 repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
 */
 
-const repeatStr = (counter, str) => {};
+const repeat_str1 = (counter, str) => {
+    let resStr = str;
+    for (let i = 1; i < counter; i++) {
+        resStr = resStr.concat(str);
+    }
+    return resStr;
+};
 
-//Test: Ex5.2
-repeatStr(6, "I"); // Output:
-repeatStr(5, "Hello"); // Output:
+//Test: Ex5.2 (1)
+repeat_str1(6, "I"); // Output:
+repeat_str1(5, "Hello"); // Output:
+
+const repeat_str2 = (counter, str) => {
+    return str.repeat(counter);
+};
+
+//Test: Ex5.2 (2)
+repeat_str2(6, "I"); // Output:
+repeat_str2(5, "Hello"); // Output:
