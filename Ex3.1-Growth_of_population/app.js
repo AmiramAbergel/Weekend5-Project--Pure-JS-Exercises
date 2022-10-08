@@ -22,8 +22,19 @@ Note: Don't forget to convert the percent parameter as a percentage in the body 
 function: if the parameter percent is 2 you have to convert it to 0.02.
 */
 
-const nb_year = () => {};
+const nb_year = (p0, percent, aug, p) => {
+    let convertPercent = percent / 100;
+    let resNum = 0;
+    let counter = p0;
+    let populationPerYear = 0;
+    while (populationPerYear <= p) {
+        populationPerYear = counter + counter * calcPercent + aug;
+        counter = populationPerYear;
+        resNum++;
+    }
+    return resNum;
+};
 
 //Test: Ex3.1
-nb_year(1500, 5, 100, 5000); // Output:
-nb_year(1500000, 2.5, 10000, 2000000); // Output:
+nb_year(1500, 5, 100, 5000); // Output: 15
+nb_year(1500000, 2.5, 10000, 2000000); // Output: 10

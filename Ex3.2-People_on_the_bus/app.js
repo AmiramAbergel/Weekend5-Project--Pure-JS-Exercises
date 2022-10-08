@@ -8,9 +8,41 @@ Each integer array has two items which represent number of people get into bus
 Your task is to return number of people who are still in the bus after the last bus station (after
 the last array). 
 Even though it is the last bus stop, the bus is not empty and some people are still
-in the bus, and they are probably sleeping there :D
-Take a look on the test cases.
+in the bus, and they are probably sleeping there :D Take a look on the test cases.
 Please keep in mind that the test cases ensure that the number of people in the bus is always
 >= 0. So the return integer can't be negative.
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 */
+
+const busStops = (arr) => {};
+
+// Test: Ex3.2
+
+busStops([
+    [10, 0],
+    [3, 5],
+    [5, 8],
+]);
+// Output:
+
+busStops([
+    [3, 0],
+    [9, 1],
+    [4, 10],
+    [12, 2],
+    [6, 1],
+    [7, 10],
+]);
+// Output:
+
+busStops([
+    [3, 0],
+    [9, 1],
+    [4, 8],
+    [12, 2],
+    [6, 1],
+    [7, 8],
+]);
+// Output:
+
+busStops([[0, 0]]); // Output:
