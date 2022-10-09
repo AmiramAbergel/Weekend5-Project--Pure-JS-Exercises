@@ -19,10 +19,32 @@ or this:
  * @param {number} n
  * @return {number}
  */
-const fib = function (n) {};
+const fib1 = function (n) {
+    let n1 = 0;
+    let n2 = 1;
+    let element;
+    if (n === 0) {
+        return 0;
+    }
+    if (n === 1) {
+        return 1;
+    }
+
+    for (let i = 2; i <= n; i++) {
+        element = n1 + n2;
+        n1 = n2;
+        n2 = element;
+    }
+    return n2;
+};
+
+const fib2 = (n) => {
+    if (n <= 1) return n;
+    return fib(n - 1) + fib(n - 2);
+};
 
 // Test: Ex4.1
-fib(2); // Output:
-fib(3); // Output:
-fib(4); // Output:
-fib(5); // Output:
+fib(2); // Output: 1
+fib(3); // Output: 2
+fib(4); // Output: 3
+fib(5); // Output: 5
