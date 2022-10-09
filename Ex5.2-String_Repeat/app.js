@@ -14,13 +14,13 @@ const repeat_str1 = (counter, str) => {
 };
 
 //Test: Ex5.2 (1)
-repeat_str1(6, "I"); // Output:
-repeat_str1(5, "Hello"); // Output:
+repeat_str1(6, "I"); // Output: 'IIIIII'
+repeat_str1(5, "Hello"); // Output: 'HelloHelloHelloHelloHello'
 
 const repeat_str2 = (counter, str) => {
     return str.repeat(counter);
 };
 
 //Test: Ex5.2 (2)
-repeat_str2(6, "I"); // Output:
-repeat_str2(5, "Hello"); // Output:
+repeat_str2(6, "I"); // Output: 'IIIIII'
+repeat_str2(5, "Hello"); // Output: HelloHelloHelloHelloHello'
