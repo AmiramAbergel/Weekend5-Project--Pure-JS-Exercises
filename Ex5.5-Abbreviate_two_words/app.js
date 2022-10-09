@@ -8,8 +8,13 @@ Sam Harris => S.H
 Patrick Feeney => P.F
 */
 
-const abbreviateName = (name) => {};
+const abbreviateName = (name) => {
+    let arr = name.split(" ");
+    arr[0] = arr[0].slice(0, 1);
+    arr[1] = arr[1].slice(0, 1);
+    return arr.join(".");
+};
 
 //Test: Ex5.5
-abbreviateName("Sam Harris"); // Output:
-abbreviateName("Patrick Feeney"); // Output:
+abbreviateName("Sam Harris"); // Output: 'S.H'
+abbreviateName("Patrick Feeney"); // Output: 'P.F'
