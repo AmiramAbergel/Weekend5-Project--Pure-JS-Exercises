@@ -43,6 +43,14 @@ const fib2 = (n) => {
     return fib(n - 1) + fib(n - 2);
 };
 
+const fib3 = (n) => {
+    const fib = [0, 1];
+    for (let i = 2; i <= n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib[n];
+};
+
 // Test: Ex4.1
 fib(2); // Output: 1
 fib(3); // Output: 2
