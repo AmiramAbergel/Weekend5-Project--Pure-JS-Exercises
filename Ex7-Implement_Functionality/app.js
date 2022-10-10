@@ -1,5 +1,5 @@
 /*
-Ex7 - Implement The Following JS Methods -
+-------- Ex7 - Implement The Following JS Methods -------- 
 Implement the following methods -
 - Filter
 - ForEach
